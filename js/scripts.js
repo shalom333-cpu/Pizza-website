@@ -7,3 +7,6 @@ function Getpizza(name, size, crust, topping, total) {
   this.topping = topping;
   this.total = total;
 }
+$(document).ready(function(){
+  
+});
