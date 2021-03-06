@@ -138,6 +138,7 @@ $(document).ready(function(){
       $("button.deliver").slideDown(1000);
       $("#addedprice").slideDown(1000);
       console.log("Your total bill is sh. " +checkoutTotal);
+      $("#pizzatotal").append("Your bill is sh. " + checkoutTotal);
     });
   });
 });
