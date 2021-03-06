@@ -149,6 +149,8 @@ $(document).ready(function(){
       $("button.deliver").hide();
       $("#pizzatotal").hide();
       let deliveryamount= checkoutTotal+150;
+      console.log("You will pay sh. " + deliveryamount + " on pick-up");
+      $("#totalbill").append("Your bill plus pick-up fee is: " + deliveryamount);
     });
   });
 });
