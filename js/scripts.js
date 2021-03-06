@@ -78,5 +78,9 @@ $(document).ready(function(){
     $("#pizzacrust").html($("#crust option:selected").val());
     $("#pizzatopping").html(ptopping.join(", "));
     $("#totals").html(total);
+
+    $("button.addPizza").click(function(){
+      
+    });
   });
 });
