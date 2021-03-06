@@ -54,5 +54,19 @@ $(document).ready(function(){
     }
     let topping_value = ptopping.length * 50;
     console.log("toppins value" + topping_value);
+
+    if ((psize == "0") && (pcrust == "0")) {
+      console.log("nothing selected");
+      $("button.proceed").show();
+      $("#info").show();
+      $("div.choice").hide();
+      alert("Hungry peep please select pizza size and crust");
+    }
+    else {
+      $("button.proceed").hide();
+      $("#info").hide();
+      $("div.choice").slideDown(1000);
+    }
+
   });
 });
