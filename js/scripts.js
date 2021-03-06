@@ -122,6 +122,11 @@ $(document).ready(function(){
         default:
           console.log("No price");
       }
+      let topping_value = ptopping.length * 50;
+      console.log("toppins value" + topping_value);
+      total = price + crust_price + topping_value;
+      console.log(total);
+
     });
   });
 });
