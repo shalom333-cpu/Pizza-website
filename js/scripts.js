@@ -9,6 +9,8 @@ function Getpizza(name, size, crust, topping, total) {
 }
 $(document).ready(function(){
   $("button.proceed").click(function(event){
-    
+    let pname = $(".name option:selected").val();
+    let psize = $("#size option:selected").val();
+    let pcrust = $("#crust option:selected").val();
   });
 });
