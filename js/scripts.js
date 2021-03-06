@@ -140,5 +140,14 @@ $(document).ready(function(){
       console.log("Your total bill is sh. " +checkoutTotal);
       $("#pizzatotal").append("Your bill is sh. " + checkoutTotal);
     });
+
+    $("button.deliver").click(function(){
+      $(".pizzatable").hide();
+      $(".choice h2").hide();
+      $(".pick-up").slideDown(1000);
+      $("#addedprice").hide();
+      $("button.deliver").hide();
+      $("#pizzatotal").hide();
+    });
   });
 });
