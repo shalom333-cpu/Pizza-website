@@ -22,3 +22,11 @@ html,body{
   padding-top: 13%;
   padding-bottom: 13%;
 }
+.order-overlay{
+  background-color: rgb(59, 58, 58);
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  font-family: 'Montserrat' serif;
+}
