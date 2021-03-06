@@ -85,7 +85,7 @@ $(document).ready(function(){
       let pcrust = $("#crust option:selected").val();
       let ptopping = [];
       $.each($("input[name='toppings']:checked"), function () {
-        ptopping.push($(this).val());
+          ptopping.push($(this).val());
       });
       console.log(ptopping.join(", "));
       switch (psize) {
@@ -105,27 +105,28 @@ $(document).ready(function(){
           console.log(price);
         default:
           console.log("error");
-      }
-      switch (pcrust) {
-        case "0":
-          crust_price = 0;
-          break;
-        case "Crispy":
-          crust_price = 200;
-          break;
-        case "Stuffed":
-          crust_price = 150;
-          break;
-        case "Gluten-free":
-          crust_price = 180;
-          break;
-        default:
-          console.log("No price");
-      }
-      let topping_value = ptopping.length * 50;
-      console.log("toppins value" + topping_value);
-      total = price + crust_price + topping_value;
-      console.log(total);
+        }
+        switch (pcrust) {
+          case "0":
+            crust_price = 0;
+            break;
+          case "Crispy":
+            crust_price = 200;
+            break;
+          case "Stuffed":
+            crust_price = 150;
+            break;
+          case "Gluten-free":
+            crust_price = 180;
+            break;
+          default:
+            console.log("No price");
+        }
+        let topping_value = ptopping.length * 50;
+        console.log("toppins value" + topping_value);
+        total = price + crust_price + topping_value;
+        console.log(total);
+      var newOrder = new Getpizza(pname, psize, pcrust, ptopping, total);
 
     });
   });
