@@ -66,3 +66,15 @@ td,th{
   padding-left: 10%;
   font-size: 28px;
 }
+#regards{
+  text-align: center;
+  color: aliceblue;
+  font-family: 'Montserrat' serif;
+}
+#info{
+  padding-top: 5%;
+  font-size: 22px;
+  padding-right: 8%;
+  padding-left: 5%;
+  font-family: 'Montserrat' serif;
+}
