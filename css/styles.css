@@ -39,3 +39,11 @@ html,body{
   padding-left: 2%;
   padding-right: 2%;
 }
+.deliver{
+  display: none;
+}
+.pickup{
+  display: none;
+  padding-left: 8%;
+  padding-right: 8%;
+}
