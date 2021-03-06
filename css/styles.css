@@ -78,3 +78,17 @@ td,th{
   padding-left: 5%;
   font-family: 'Montserrat' serif;
 }
+footer {
+  background-color: rgb(180, 180, 169);
+  padding-top: 8%;
+  padding-bottom: 5%;
+  font-family: 'Montserrat' serif;
+}
+footer, h2{
+  text-align: center;
+  font-family: 'Montserrat' serif;
+}
+footer, ul{
+  list-style-position: inside;
+  font-family: 'Montserrat' serif;
+}
