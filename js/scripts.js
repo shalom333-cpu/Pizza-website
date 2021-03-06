@@ -167,15 +167,16 @@ $(document).ready(function(){
 
       if ($("input#name").val() && $("input#phone").val() && $("input#location").val() != "") {
 
-        $("#finallmessage").append(person + ",Hello hungry peep! We have recieved your order and it will be delivered to you at " + location + ". Prepare sh. " + deliveryamount);
+        $("#finallmessage").append(person + ", We have recieved your order and it will be delivered to you at " + location + ". Prepare sh. " + deliceryamount);
         $("#totalbill").hide();
         $("#finallmessage").slideDown(1200);
       }
       else {
-        alert("Please fill in the details for pick-up!");
-        $(".pick-up").show();
+        alert("Please fill in the details for delivery!");
+        $(".delivery").show();
         $("button#final-order").show();
       }
     });
+    event.preventDefault();
   });
 });
