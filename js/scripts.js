@@ -161,6 +161,9 @@ $(document).ready(function(){
       $("button#final-order").hide();
       let deliceryamount= checkoutTotal+150;
       console.log("Final bill is: "+deliceryamount);
+      let person = $("input#name").val();
+      let phone = $("input#phone").val();
+      let location = $("input#location").val();
     });
   });
 });
