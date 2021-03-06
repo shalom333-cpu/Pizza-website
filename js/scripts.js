@@ -164,6 +164,18 @@ $(document).ready(function(){
       let person = $("input#name").val();
       let phone = $("input#phone").val();
       let location = $("input#location").val();
+
+      if ($("input#name").val() && $("input#phone").val() && $("input#location").val() != "") {
+
+        $("#finallmessage").append(person + ",Hello hungry peep! We have recieved your order and it will be delivered to you at " + location + ". Prepare sh. " + deliveryamount);
+        $("#totalbill").hide();
+        $("#finallmessage").slideDown(1200);
+      }
+      else {
+        alert("Please fill in the details for pick-up!");
+        $(".pick-up").show();
+        $("button#final-order").show();
+      }
     });
   });
 });
