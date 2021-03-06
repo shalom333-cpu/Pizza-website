@@ -148,6 +148,7 @@ $(document).ready(function(){
       $("#addedprice").hide();
       $("button.deliver").hide();
       $("#pizzatotal").hide();
+      let deliveryamount= checkoutTotal+150;
     });
   });
 });
