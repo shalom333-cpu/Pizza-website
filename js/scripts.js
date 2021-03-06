@@ -152,5 +152,15 @@ $(document).ready(function(){
       console.log("You will pay sh. " + deliveryamount + " on pick-up");
       $("#totalbill").append("Your bill plus pick-up fee is: " + deliveryamount);
     });
+
+    $("button#final-order").click(function(event){
+      event.preventDefault();
+
+      $("#pizzatotal").hide();
+      $(".pick-up").hide();
+      $("button#final-order").hide();
+      let deliceryamount= checkoutTotal+150;
+      console.log("Final bill is: "+deliceryamount);
+    });
   });
 });
