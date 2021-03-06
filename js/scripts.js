@@ -12,5 +12,6 @@ $(document).ready(function(){
     let pname = $(".name option:selected").val();
     let psize = $("#size option:selected").val();
     let pcrust = $("#crust option:selected").val();
+    let ptopping = [];
   });
 });
