@@ -80,7 +80,10 @@ $(document).ready(function(){
     $("#totals").html(total);
 
     $("button.addPizza").click(function(){
-      
+      let pname = $(".name option:selected").val();
+      let psize = $("#size option:selected").val();
+      let pcrust = $("#crust option:selected").val();
+      let ptopping = [];
     });
   });
 });
