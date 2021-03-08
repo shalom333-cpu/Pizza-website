@@ -20,7 +20,7 @@ This website is easily accessible through git-hub where you can follow this link
 | Click home delivery, fill form details, click order, recieve alert | Click Home delivery, Enter name(Shalom), phone number(07) & Location(Nairobi, Kenya) | Shalom, we have recieved your order, it will be delivered at Nairobi, Kenya. Please prepare 1250 |
 
 ## Known Bugs
-Orders can't be added all together
+Orders can't be added all together properly
 
 ## Technologies used
 This project was written using HTML, JavaScript & CSS
